@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    height: 80px;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+nav select {
+    position: relative;
+    z-index: 10;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw);
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.70;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    gap: 5px;
+    padding: 23px;
+    text-align: center;
+}
+
+.hero .f-child {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.hero .s-child {
+    font-size: 1rem;
+}
+
+.hero .t-child {
+    font-size: 1rem;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+}
+
+.seperation {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-lang {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    color: white;
+}
+
+.btn {
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-red {
+    color: white;
+    background-color: #E50914;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 50px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    font-weight: bold;
+}
+
+.input::placeholder {
+    color: rgb(158, 158, 158);
+}
+
+.input:focus {
+    border: 1px solid rgba(235, 13, 13, 0.5);
+    color: white;
+}
+
+.form .btn-start {
+    padding: 11px 15px;
+    cursor: pointer;
+}
+
+.f-section {
+    position: relative;
+    height: 55vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+
+.divText span {
+    color: white;
+}
+
+.divText .bold {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.imgDiv img {
+    width: 70%;
+    position: relative;
+    z-index: 10;
+}
+
+.imgDiv video {
+    width: 23%;
+    position: absolute;
+    top: 22%;
+    right: 22%;
+}
+
+.imgDiv .third-video {
+    width: 25%;
+    position: absolute;
+    top: 19%;
+    right: 25%;
+}
+
+
+
+.FAQs {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FAQs h2 {
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.faqbox {
+    width: 50%;
+    height: 70px;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 1.1rem;
+    transition: all 300ms;
+    margin-bottom: 20px;
+}
+
+.faqbox:hover {
+    background-color: #2D2D2D;
+    cursor: pointer;
+}
+
+.FAQs svg {
+    filter: invert(1);
+}
+
+.seperation2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+}
+
+.email-content {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+footer {
+    height: 30vh;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer .ques {
+    color: white;
+    padding: 34px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: start;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .imgDiv video {
+        width: 23%;
+        position: absolute;
+        top: 26%;
+        right: 22%;
+    }
+
+    .imgDiv .third-video {
+        width: 28%;
+        position: absolute;
+        top: 22%;
+        right: 23%;
+    }
+}
+
+@media (max-width: 950px) {
+    .imgDiv video {
+        width: 23%;
+        position: absolute;
+        top: 30%;
+        right: 22%;
+    }
+
+    .imgDiv .third-video {
+        width: 28%;
+        position: absolute;
+        top: 27%;
+        right: 23%;
+    }
+}
+
+@media (max-width: 750px) {
+    .imgDiv video {
+        width: 23%;
+        position: absolute;
+        top: 34%;
+        right: 22%;
+    }
+
+    .imgDiv .third-video {
+        width: 28%;
+        position: absolute;
+        top: 32%;
+        right: 23%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero span {
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgDiv img {
+        width: 40%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .imgDiv video {
+        width: 28%;
+        position: absolute;
+        top: 53%;
+        right: 36%;
+    }
+
+    .imgDiv .third-video {
+        width: 30%;
+        position: absolute;
+        top: 52%;
+        right: 35%;
+    }
+
+    .faqbox {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 450px) {
+    span {
+        font-size: 13px;
+    }
+
+    .btn-start {
+        margin-top: 10px;
+    }
+
+    .btn-lang {
+        display: none;
+    }
+
+    .btn-red {
+        padding: 5px 30px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    nav img {
+        width: 45%;
+    }
+}
